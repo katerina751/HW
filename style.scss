@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    outline: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.top {
+    background: #000915;
+    height: 1024px;
+    background-image: url(img/topback.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__content {
+        padding-top: 217px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        color: #FFFFFF;
+    }
+
+    &__text_mob {
+        display: none;
+    }
+
+    &__text {
+        width: 481px;
+        padding-top: 32px;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+    &__link-content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__link-box1::before {
+        content: "игр. Если готов нажимай ";
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+    &__link-box2::before {
+        content: " и ";
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+    &__link {
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+
+    &__button {
+        margin-top: 44px;
+        width: 234.06px;
+        height: 48.6px;
+        top: 482.11px;
+        background: #9C0332;
+        border-radius: 30px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+}
+
+.games {
+    background: #000915;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-box {
+        padding-top: 128px;
+        padding-bottom: 128px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        box-sizing: border-box;
+    }
+
+    &__item {
+        width: 379px;
+        height: 300px;
+        left: 120px;
+        top: 1152px;
+        background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(0023.jpg);
+        border-radius: 16px;
+        display: flex;
+        align-items: end;
+
+        &_1 {
+            background-image: url(img/games_1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &_2 {
+            background-image: url(img/games_2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &_3 {
+            background-image: url(img/games_3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__name {
+        margin-left: 32px;
+        margin-bottom: 32px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .top__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+@import 'mobile';
