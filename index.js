@@ -126,11 +126,12 @@ printMessage();
 // задание 5
 
 let anuNumeric = (p, o) => {
-    if (isNaN(p, o)) return `Одно или оба значения не являются числом`;
+    if (isNaN(p)) return `Одно или оба значения не являются числом`;
+    else if (isNaN(o)) return `Одно или оба значения не являются числом`;
     else return (p * o);
 }
 
-anuNumeric(2, 7);
+anuNumeric('fhchgch', 8);
 
 // задание 6
 
@@ -144,11 +145,11 @@ numericUser(Number(prompt('Введите число')));
 // задание 7
 
 let monthNumber = (xx) => {
-    if (xx === Number(12 || 1 || 2)) return `Зима`;
-    else if (xx === Number(3 || 4 || 5)) return `Весна`;
-    else if (xx === Number(6 || 7 || 8)) return `Лето`;
-    else if (xx === Number(9 || 10 || 11)) return `Осень`;
-    else return `Переданный параметр не является номером месяца`;
+    if (xx === 12 || xx === 1 || xx === 2) console.log('Зима');
+    else if (xx === 3 || xx === 4 || xx === 5) console.log('Весна');
+    else if (xx === 6 || xx === 7 || xx === 8) console.log('Лето');
+    else if (xx === 9 || xx === 10 || xx === 11) console.log('Осень');
+    else console.log('Переданный параметр не является номером месяца');
 }
 
 monthNumber(Number(prompt('Введите номер месяца')));
