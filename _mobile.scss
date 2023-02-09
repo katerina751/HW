@@ -74,5 +74,52 @@
             top: 863px;
         }
     }
+
+    .game {
+        height: 653px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    
+        &__content {
+            padding-left: 0px;
+            padding-right: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+      
+        &__text {
+            width: 343px;
+            padding-top: 32px;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__picture {
+            display: none;
+
+            &_mob {
+                display: block;
+                padding-top: 32px;
+            }
+        }
+
+        &__button {
+            top: 447px;
+        }
+    }
 }
 
