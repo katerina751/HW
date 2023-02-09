@@ -153,3 +153,4 @@ let monthNumber = (xx) => {
 }
 
 monthNumber(Number(prompt('Введите номер месяца')));
+
