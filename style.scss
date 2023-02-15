@@ -176,8 +176,9 @@ a {
     justify-content: space-around;
 
     &__content {
-        padding-left: 120px;
-        padding-right: 120px;
+        &_tabl-mob {
+            display: none;
+        }
     }
 
     &__title {
@@ -224,6 +225,9 @@ a {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        &_2 {
+            flex-wrap: wrap-reverse;
+        }
 
         &__content {
             padding-left: 0px;
