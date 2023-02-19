@@ -18,8 +18,8 @@ alert("Запомните порядок всех элементов: " + arrayE
 // arrayElem = arrayElem.join('');
 
 let answerUser = (firstElem, lastElem) => {
-    if (firstElem.toLowerCase() === arrayElem[0].toLowerCase() && lastElem.toLowerCase() === arrayElem[6]) alert('Поздравляю, Вы угадали оба элемента!');
-    else if (firstElem.toLowerCase() === arrayElem[0].toLowerCase() || lastElem.toLowerCase() === arrayElem[6]) alert('Вы были близки к победе!');
+    if (firstElem.toLowerCase() === arrayElem[0].toLowerCase() && lastElem.toLowerCase() === arrayElem[6].toLowerCase()) alert('Поздравляю, Вы угадали оба элемента!');
+    else if (firstElem.toLowerCase() === arrayElem[0].toLowerCase() || lastElem.toLowerCase() === arrayElem[6].toLowerCase()) alert('Вы были близки к победе!');
     else alert('Вы ответили неверно');
 };
 
