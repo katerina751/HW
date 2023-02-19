@@ -15,15 +15,12 @@ monthNumber(Number(prompt('Введите номер месяца')));
 let arrayElem = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 arrayElem = arrayElem.sort(() => Math.random() - 0.5);
 alert("Запомните порядок всех элементов: " + arrayElem);
-arrayElem = arrayElem.join('');
-
-// let firstElem = prompt('Чему равнялся первый элемент массива?');
-// let lastElem = prompt('Чему равнялся последний элемент массива?');
+// arrayElem = arrayElem.join('');
 
 let answerUser = (firstElem, lastElem) => {
-    if (arrayElem.toLowerCase().startsWith(firstElem.toLowerCase())) alert('Вы были близки к победе!');
-    else if (arrayElem.toLowerCase().endWith(lastElem.toLowerCase())) alert('Поздравляю, Вы угадали оба элемента');
+    if (firstElem.toLowerCase() === arrayElem[0].toLowerCase() && lastElem.toLowerCase() === arrayElem[6]) alert('Поздравляю, Вы угадали оба элемента!');
+    else if (firstElem.toLowerCase() === arrayElem[0].toLowerCase() || lastElem.toLowerCase() === arrayElem[6]) alert('Вы были близки к победе!');
     else alert('Вы ответили неверно');
 };
 
-answerUser(prompt('Чему равнялся первый элемент массива?'),prompt('Чему равнялся последний элемент массива?'));
+answerUser(prompt('Чему равнялся первый элемент массива?'), prompt('Чему равнялся последний элемент массива?'));

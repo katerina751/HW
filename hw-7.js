@@ -60,7 +60,7 @@ console.log(arr6);
 function getRandomNumbers(a7, b7) {
     a7 = Math.ceil(a7);
     b7 = Math.floor(b7);
-    return Math.floor(Math.random() * (b7 - a7)) + a7;
+    return Math.floor(Math.random() * (b7 - a7) + a7);
 }
 getRandomNumbers(1, 10);
 
