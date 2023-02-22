@@ -109,17 +109,17 @@ function calling() {
 };
 
 const beeps = (callback) => {
-	setTimeout(() => { 
-        let horn = 'Идут гудки...';
-          callback(horn);
+    console.log('Идут гудки...');
+
+    setTimeout(() => {
+        callback();
     }, 1000);
 };
+
 
 function talk() {
     console.log('Разговор')
 }
-
-let horn = beeps(a, talk);
 
 calling();
 beeps();
